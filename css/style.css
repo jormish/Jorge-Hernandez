@@ -2,6 +2,15 @@
   margin: 0;
   padding: 0;
 }
+.cat {
+  transform: rotate(10deg);
+
+  color: whitesmoke;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+  text-shadow: 2px 2px 30px black;
+}
+
 li {
   font-family: monospace;
   font-size: 15px;
@@ -53,12 +62,13 @@ a {
 .Img-3,
 .Img-4,
 .Img-5 {
-  background-color: rgb(155, 155, 155);
   box-sizing: border-box;
 }
 
 .header {
   background-color: rgb(216, 214, 214);
+  background-image: radial-gradient(white);
+
   grid-area: header;
   display: flex;
   flex-direction: row;
@@ -386,6 +396,7 @@ a {
 
 .Footer {
   background-color: rgb(170, 168, 168);
+  background-image: radial-gradient(to bottom, white);
   grid-area: Footer;
   display: flex;
   gap: 5rem;
