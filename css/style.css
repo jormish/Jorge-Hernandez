@@ -2,6 +2,12 @@
   margin: 0;
   padding: 0;
 }
+
+.navbar {
+  padding: 0rem 12rem;
+  height: 0rem;
+  min-height: 6.5vh;
+}
 .cat {
   transform: rotate(10deg);
 
@@ -9,6 +15,8 @@
   font-family: "Times New Roman", Times, serif;
   font-size: 50px;
   text-shadow: 2px 2px 30px black;
+
+  margin: auto;
 }
 
 li {
@@ -33,6 +41,10 @@ a {
 }
 
 .container {
+  width: max-content;
+}
+
+.container1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 150px 800px repeat(5, 300px) 150px;
@@ -377,6 +389,10 @@ a {
   width: 250px;
 
   margin: auto;
+}
+
+.row1 {
+  background-color: rgb(88, 88, 88);
 }
 
 .foo1:hover {
