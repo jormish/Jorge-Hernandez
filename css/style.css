@@ -4,19 +4,8 @@
 }
 
 .navbar {
-  padding: 0rem 12rem;
   height: 0rem;
   min-height: 6.5vh;
-}
-.cat {
-  transform: rotate(10deg);
-
-  color: whitesmoke;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 50px;
-  text-shadow: 2px 2px 30px black;
-
-  margin: auto;
 }
 
 li {
@@ -51,11 +40,10 @@ a {
 .container1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 150px 800px repeat(5, 300px) 150px;
+  grid-template-rows: 1000px !important; repeat(5, 300px) 150px;
   gap: 10px 10px;
   grid-auto-flow: row;
   grid-template-areas:
-    "header header"
     "Hero Hero"
     "Text-1 Img-1"
     "Img-2 Text-2"
@@ -65,8 +53,6 @@ a {
     "Footer Footer";
 }
 
-.header,
-.Footer,
 .Hero,
 .Text-1,
 .Text-2,
@@ -77,20 +63,9 @@ a {
 .Img-2,
 .Img-3,
 .Img-4,
-.Img-5 {
+.Img-5,
+.footer {
   box-sizing: border-box;
-}
-
-.header {
-  background-color: rgb(216, 214, 214);
-  background-image: radial-gradient(white);
-
-  grid-area: header;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 4rem;
 }
 
 .Hero {
@@ -99,6 +74,8 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 1000px;
+  
 }
 
 .Text-1 {
@@ -399,6 +376,12 @@ a {
   background-color: rgb(88, 88, 88);
 }
 
+.Fo1 {
+
+  padding-top: 10rem;
+  padding-bottom: 25rem;
+}
+
 .foo1:hover {
   background-color: rgb(88, 88, 88);
   padding: 0.5rem;
@@ -422,6 +405,7 @@ a {
   gap: 5rem;
   justify-content: center;
   align-items: center;
+  
 }
 
 @media only screen and (max-width: 480px) {
@@ -439,11 +423,15 @@ a {
 
   @media only screen and (min-width: 576px) {
     body {
-      color: rgb(251, 255, 0);
+      color: rgb(0, 0, 0);
       background-color: rgb(60, 255, 0);
+      
     }
   }
 
+
+  
+  
   @media only screen and (min-width: 768px) {
     body {
       color: rgb(0, 255, 242);
