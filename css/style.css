@@ -3,9 +3,82 @@
   padding: 0;
 }
 
+:root {
+  --color0: #aaa8a8;
+  --color1: #ad0000;
+  --color2: #001aff;
+  --color3: #00bb54;
+  --color4: #ffffff;
+}
+
 .navbar {
+  background-color: var(--color0) !important;
+
   height: 0rem;
   min-height: 6.5vh;
+}
+
+.bai img {
+  max-width: 100%;
+  width: 100%;
+  height: auto !important;
+}
+
+h2 {
+  text-align: center;
+  color: black;
+  text-shadow: #ffffff;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.dep2 {
+  height: 840px;
+  width: 100%;
+  background-color: var(--color2);
+  background-image: url(/imagenes/deportes-1.jpg);
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  border-radius: 50px;
+}
+
+.spo {
+  color: #ffffff;
+  font-family: Georgia, "Times New Roman", Times, serif, Haettenschweiler,
+    "Arial Narrow Bold", sans-serif;
+  margin-top: 100px;
+}
+
+.spo2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-around;
+
+  min-height: 600px;
+  width: 100%;
+
+  color: black;
+  text-align: center;
+  line-height: 600px;
+  font-size: 45px;
+  font-family: cursive;
+  font-weight: bolder;
+}
+
+.his {
+  text-align: center;
+  color: black;
+
+  font-size: 35px;
+  font-family: cursive;
+  font-weight: bolder;
 }
 
 li {
@@ -14,7 +87,7 @@ li {
 
   list-style: none;
   margin: 2rem;
-  padding: 0.5rem;
+  padding: 0rem;
 }
 
 li:hover {
@@ -29,18 +102,45 @@ a {
   color: white;
 }
 
-.container {
-  width: max-content;
+.cob {
+  color: black;
+  text-shadow: #ffffff;
 }
 
-.container2 {
-  text-align: center;
-  font-size: 25px;
+.box1 {
+  background-image: url(/imagenes/historiadelboxeo.jpg);
+  background-size: cover;
+  background-position: center;
 }
-.container1 {
+
+.bas1 {
+  background-image: url(/imagenes/historyofbasketball.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.fot {
+  background-image: url(/imagenes/historiadefootball.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.fut {
+  background-image: url(/imagenes/historiadelfutbol.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.xga {
+  background-image: url(/imagenes/historyofx-Games.jpg);
+  background-size: cover;
+  background-position: 10px;
+}
+
+.container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat (5, 300px) 150px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 500px 300px 300px 300px 300px 300px 150px;
   gap: 10px 10px;
   grid-auto-flow: row;
   grid-template-areas:
@@ -51,8 +151,9 @@ a {
     "Img-4 Text-4"
     "Text-5 Img-5"
     "Footer Footer";
+  width: 100%;
+  height: 100%;
 }
-
 .Hero,
 .Text-1,
 .Text-2,
@@ -74,7 +175,7 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1000px;
+  height: 500px;
 }
 
 .Text-1 {
@@ -83,7 +184,7 @@ a {
   text-align: center;
   font-family: fantasy;
   font-size: 50px;
-  text-shadow: 2px 2px 3px black;
+  text-shadow: 2px 2px 3px rgb(255, 255, 255);
   padding: 5rem;
 }
 
@@ -96,35 +197,13 @@ a {
   animation-delay: 1s;
 }
 
-@keyframes dep {
-  from {
-    background-color: rgb(156, 11, 11);
-  }
-  to {
-    background-color: rgb(128, 128, 8);
-  }
-}
-.Img-1 {
-  grid-area: Img-1;
-  background-image: url(../imagenes/boxeo.jpg);
-  background-position: top;
-  background-size: cover;
-}
-
-.Img-2 {
-  grid-area: Img-2;
-  background-image: url(../imagenes/basketball.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .Text-2 {
   grid-area: Text-2;
-  text-shadow: 2px 2px 3px black;
+  color: black;
   text-align: center;
   font-family: fantasy;
   font-size: 50px;
+  text-shadow: 2px 2px 3px rgb(255, 255, 255);
   padding: 5rem;
 }
 
@@ -137,20 +216,13 @@ a {
   animation-delay: 1s;
 }
 
-@keyframes dep {
-  from {
-    background-color: rgb(156, 11, 11);
-  }
-  to {
-    background-color: rgb(128, 128, 8);
-  }
-}
 .Text-3 {
   grid-area: Text-3;
-  text-shadow: 2px 2px 3px black;
+  color: black;
   text-align: center;
   font-family: fantasy;
   font-size: 50px;
+  text-shadow: 2px 2px 3px rgb(255, 255, 255);
   padding: 5rem;
 }
 
@@ -161,22 +233,6 @@ a {
   animation-timing-function: ease-in;
   animation-duration: 7s;
   animation-delay: 1s;
-}
-
-@keyframes dep {
-  from {
-    background-color: rgb(156, 11, 11);
-  }
-  to {
-    background-color: rgb(128, 128, 8);
-  }
-}
-.Img-3 {
-  grid-area: Img-3;
-  background-image: url(../imagenes/football.jpg);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .Img-4 {
@@ -188,10 +244,11 @@ a {
 
 .Text-4 {
   grid-area: Text-4;
-  text-shadow: 2px 2px 3px black;
+  color: black;
   text-align: center;
   font-family: fantasy;
   font-size: 50px;
+  text-shadow: 2px 2px 3px rgb(255, 255, 255);
   padding: 5rem;
 }
 
@@ -204,21 +261,13 @@ a {
   animation-delay: 1s;
 }
 
-@keyframes dep {
-  from {
-    background-color: rgb(156, 11, 11);
-  }
-  to {
-    background-color: rgb(128, 128, 8);
-  }
-}
-
 .Text-5 {
   grid-area: Text-5;
-  text-shadow: 2px 2px 3px black;
+  color: black;
   text-align: center;
   font-family: fantasy;
   font-size: 50px;
+  text-shadow: 2px 2px 3px rgb(255, 255, 255);
   padding: 5rem;
 }
 
@@ -229,23 +278,6 @@ a {
   animation-timing-function: ease-in;
   animation-duration: 7s;
   animation-delay: 1s;
-}
-
-@keyframes dep {
-  from {
-    background-color: rgb(156, 11, 11);
-  }
-  to {
-    background-color: rgb(128, 128, 8);
-  }
-}
-
-.Img-5 {
-  grid-area: Img-5;
-  background-image: url(../imagenes/x-games.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .vid1 {
@@ -283,24 +315,24 @@ a {
   height: 100%;
 }
 
-.Img-11 {
+.Img-1 {
   grid-area: Img-1;
   background-image: url(../imagenes/boxeo.jpg);
   background-position: top;
   background-size: cover;
 }
 
-.Img-11 {
+.Img-1 {
   transition: height 0.7s;
 }
-.Img-11:hover {
+.Img-1:hover {
   height: 300px;
   width: 250px;
 
   margin: auto;
 }
 
-.Img-22 {
+.Img-2 {
   grid-area: Img-2;
   background-image: url(../imagenes/basketball.jpg);
   background-position: center;
@@ -308,17 +340,17 @@ a {
   background-size: cover;
 }
 
-.Img-22 {
+.Img-2 {
   transition: height 0.7s;
 }
-.Img-22:hover {
+.Img-2:hover {
   height: 300px;
   width: 250px;
 
   margin: auto;
 }
 
-.Img-33 {
+.Img-3 {
   grid-area: Img-3;
   background-image: url(../imagenes/football.jpg);
   background-position: top;
@@ -326,34 +358,34 @@ a {
   background-size: cover;
 }
 
-.Img-33 {
+.Img-3 {
   transition: height 0.7s;
 }
-.Img-33:hover {
+.Img-3:hover {
   height: 300px;
   width: 250px;
 
   margin: auto;
 }
 
-.Img-44 {
+.Img-4 {
   grid-area: Img-4;
   background-image: url(../imagenes/futbol.jpg);
   background-position: top;
   background-size: cover;
 }
 
-.Img-44:hover {
+.Img-4:hover {
   transition: height 0.7s;
 }
-.Img-44:hover {
+.Img-4:hover {
   height: 300px;
   width: 250px;
 
   margin: auto;
 }
 
-.Img-55 {
+.Img-5 {
   grid-area: Img-5;
   background-image: url(../imagenes/x-games.jpg);
   background-position: center;
@@ -361,10 +393,10 @@ a {
   background-size: cover;
 }
 
-.Img-55:hover {
+.Img-5:hover {
   transition: height 0.7s;
 }
-.Img-55:hover {
+.Img-5:hover {
   height: 300px;
   width: 250px;
 
@@ -373,6 +405,20 @@ a {
 
 .row1 {
   background-color: rgb(88, 88, 88);
+}
+
+@keyframes dep {
+  from {
+    background-color: rgb(156, 11, 11);
+  }
+  to {
+    background-color: rgb(128, 128, 8);
+  }
+}
+
+.container2 {
+  text-align: center;
+  font-size: 25px;
 }
 
 .Fo1 {
@@ -405,51 +451,99 @@ a {
   align-items: center;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 0px) and (max-width: 480px) {
   body {
     color: red;
     background-color: orangered;
   }
 }
 
-@media only screen and (min-width: 490px) {
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+  .bai img {
+    max-width: 18px;
+    max-height: 18px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 575px) {
   body {
     background-color: blueviolet;
     color: orange;
   }
+}
 
-  @media only screen and (min-width: 576px) {
-    body {
-      color: rgb(0, 0, 0);
-      background-color: rgb(60, 255, 0);
-    }
+@media only screen and (min-width: 481px) and (max-width: 575px) {
+  .bai img {
+    max-width: 20px;
+    max-height: 20px;
   }
+}
 
-  @media only screen and (min-width: 768px) {
-    body {
-      color: rgb(0, 255, 242);
-      background-color: rgb(0, 119, 255);
-    }
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  body {
+    color: rgb(0, 0, 0);
+    background-color: rgb(60, 255, 0);
   }
+}
 
-  @media only screen and (min-width: 992px) {
-    body {
-      color: rgb(65, 255, 128);
-      background-color: rgb(132, 0, 255);
-    }
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .bai img {
+    max-width: 25px;
+    max-height: 25px;
   }
+}
 
-  @media only screen and (min-width: 1200px) {
-    body {
-      color: red;
-      background-color: rgb(212, 0, 255);
-    }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body {
+    color: rgb(0, 38, 255);
+    background-color: rgb(0, 119, 255);
   }
+}
 
-  @media only screen and (min-width: 1400px) {
-    body {
-      color: rgb(255, 0, 234);
-      background-color: rgb(255, 251, 0);
-    }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .bai img {
+    max-width: 30px;
+    max-height: 30px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  body {
+    color: rgb(65, 255, 128);
+    background-color: rgb(255, 0, 234);
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .bai img {
+    max-width: 35px;
+    max-height: 35px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  body {
+    color: rgb(255, 0, 0);
+    background-color: rgb(255, 0, 0);
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .bai img {
+    max-width: 40px;
+    max-height: 40px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  body {
+    color: rgb(255, 0, 234);
+    background-color: rgb(255, 251, 0);
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .bai img {
+    max-width: 40px;
+    max-height: 40px;
   }
 }
