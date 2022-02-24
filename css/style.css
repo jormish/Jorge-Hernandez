@@ -37,7 +37,7 @@ h2 {
   height: 840px;
   width: 100%;
   background-color: var(--color2);
-  background-image: url(/imagenes/deportes-1.jpg);
+  background-image: url(../imagenes/deportes-1.jpg);
   background-size: cover;
   background-position: center;
 
@@ -108,31 +108,31 @@ a {
 }
 
 .box1 {
-  background-image: url(/imagenes/historiadelboxeo.jpg);
+  background-image: url(../imagenes/historiadelboxeo.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .bas1 {
-  background-image: url(/imagenes/historyofbasketball.jpg);
+  background-image: url(../imagenes/historyofbasketball.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .fot {
-  background-image: url(/imagenes/historiadefootball.jpg);
+  background-image: url(../imagenes/historiadefootball.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .fut {
-  background-image: url(/imagenes/historiadelfutbol.jpg);
+  background-image: url(../imagenes/historiadelfutbol.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .xga {
-  background-image: url(/imagenes/historyofx-Games.jpg);
+  background-image: url(../imagenes/historyofx-Games.jpg);
   background-size: cover;
   background-position: 10px;
 }
