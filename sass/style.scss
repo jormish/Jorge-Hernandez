@@ -3,6 +3,14 @@
   padding: 0;
 }
 
+$color1: black;
+$color2: blue;
+$color3: grey;
+$color4: white;
+$color5: #585858;
+
+$font1: Segoe;
+
 :root {
   --color0: #aaa8a8;
   --color1: #ad0000;
@@ -12,27 +20,28 @@
 }
 
 body {
-  background-color: grey;
+  background-color: $color3;
 }
 
 .navbar-toggler {
-  background-color: white;
+  background-color: $color4;
 }
 
 .dropdown-item {
-  color: black;
+  color: $color1;
   font-weight: bolder;
 }
 
 .navbar {
   background-color: var(--color0) !important;
+
   height: 0rem;
   min-height: 6.5vh;
 }
 
 .dow {
   color: black;
-  background-color: white;
+  background-color: $color4;
 }
 
 .bai {
@@ -53,18 +62,20 @@ h2 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 50px;
   font-weight: bolder;
-}
-.dep2 {
-  height: 840px;
-  width: 100%;
-  background-color: var(--color2);
-  background-image: url(../imagenes/deportes-1.jpg);
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: flex-start;
-  align-content: center;
-  border-radius: 50px;
+
+  .dep2 {
+    height: 840px;
+    width: 100%;
+    background-color: var(--color2);
+    background-image: url(../imagenes/deportes-1.jpg);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    border-radius: 50px;
+  }
 }
 
 .spo {
@@ -80,8 +91,10 @@ h2 {
   justify-content: space-evenly;
   align-items: center;
   align-content: space-around;
+
   min-height: 600px;
   width: 100%;
+
   color: black;
   text-align: center;
   line-height: 600px;
@@ -93,6 +106,7 @@ h2 {
 .his {
   text-align: center;
   color: black;
+
   font-size: 35px;
   font-family: cursive;
   font-weight: bolder;
@@ -101,19 +115,19 @@ h2 {
 li {
   font-family: monospace;
   font-size: 15px;
+
   list-style: none;
   margin: 2rem;
   padding: 0rem;
 }
 
 li:hover {
-  background-color: #585858;
+  background-color: rgb(88, 88, 88);
 }
 
 ul {
   display: flex;
 }
-
 a {
   text-decoration: none;
   color: white;
@@ -160,11 +174,17 @@ a {
   grid-template-rows: 500px 300px 300px 300px 300px 300px 150px;
   gap: 10px 10px;
   grid-auto-flow: row;
-  grid-template-areas: "Hero Hero" "Text-1 Img-1" "Img-2 Text-2" "Text-3 Img-3" "Img-4 Text-4" "Text-5 Img-5" "Footer Footer";
+  grid-template-areas:
+    "Hero Hero"
+    "Text-1 Img-1"
+    "Img-2 Text-2"
+    "Text-3 Img-3"
+    "Img-4 Text-4"
+    "Text-5 Img-5"
+    "Footer Footer";
   width: 100%;
   height: 100%;
 }
-
 .Hero,
 .Text-1,
 .Text-2,
@@ -195,12 +215,12 @@ a {
   text-align: center;
   font-family: fantasy;
   font-size: 50px;
-  text-shadow: 2px 2px 3px white;
+  text-shadow: 2px 2px 3px rgb(255, 255, 255);
   padding: 5rem;
 }
 
 .Text-1 {
-  background-color: #65a349;
+  background-color: rgb(101, 163, 73);
   animation-name: dep;
   animation-iteration-count: 10;
   animation-timing-function: ease-in;
@@ -214,12 +234,12 @@ a {
   text-align: center;
   font-family: fantasy;
   font-size: 50px;
-  text-shadow: 2px 2px 3px white;
+  text-shadow: 2px 2px 3px rgb(255, 255, 255);
   padding: 5rem;
 }
 
 .Text-2 {
-  background-color: #65a349;
+  background-color: rgb(101, 163, 73);
   animation-name: dep;
   animation-iteration-count: 10;
   animation-timing-function: ease-in;
@@ -233,12 +253,12 @@ a {
   text-align: center;
   font-family: fantasy;
   font-size: 50px;
-  text-shadow: 2px 2px 3px white;
+  text-shadow: 2px 2px 3px rgb(255, 255, 255);
   padding: 5rem;
 }
 
 .Text-3 {
-  background-color: #65a349;
+  background-color: rgb(101, 163, 73);
   animation-name: dep;
   animation-iteration-count: 10;
   animation-timing-function: ease-in;
@@ -259,12 +279,12 @@ a {
   text-align: center;
   font-family: fantasy;
   font-size: 50px;
-  text-shadow: 2px 2px 3px white;
+  text-shadow: 2px 2px 3px rgb(255, 255, 255);
   padding: 5rem;
 }
 
 .Text-4 {
-  background-color: #65a349;
+  background-color: rgb(101, 163, 73);
   animation-name: dep;
   animation-iteration-count: 10;
   animation-timing-function: ease-in;
@@ -278,12 +298,12 @@ a {
   text-align: center;
   font-family: fantasy;
   font-size: 50px;
-  text-shadow: 2px 2px 3px white;
+  text-shadow: 2px 2px 3px rgb(255, 255, 255);
   padding: 5rem;
 }
 
 .Text-5 {
-  background-color: #65a349;
+  background-color: rgb(101, 163, 73);
   animation-name: dep;
   animation-iteration-count: 10;
   animation-timing-function: ease-in;
@@ -336,10 +356,10 @@ a {
 .Img-1 {
   transition: height 0.7s;
 }
-
 .Img-1:hover {
   height: 300px;
   width: 250px;
+
   margin: auto;
 }
 
@@ -354,10 +374,10 @@ a {
 .Img-2 {
   transition: height 0.7s;
 }
-
 .Img-2:hover {
   height: 300px;
   width: 250px;
+
   margin: auto;
 }
 
@@ -372,10 +392,10 @@ a {
 .Img-3 {
   transition: height 0.7s;
 }
-
 .Img-3:hover {
   height: 300px;
   width: 250px;
+
   margin: auto;
 }
 
@@ -389,10 +409,10 @@ a {
 .Img-4:hover {
   transition: height 0.7s;
 }
-
 .Img-4:hover {
   height: 300px;
   width: 250px;
+
   margin: auto;
 }
 
@@ -407,25 +427,26 @@ a {
 .Img-5:hover {
   transition: height 0.7s;
 }
-
 .Img-5:hover {
   height: 300px;
   width: 250px;
+
   margin: auto;
 }
 
 .row1 {
-  background-color: #585858;
+  background-color: rgb(88, 88, 88);
 }
 
 @keyframes dep {
   from {
-    background-color: #9c0b0b;
+    background-color: rgb(156, 11, 11);
   }
   to {
-    background-color: #808008;
+    background-color: rgb(128, 128, 8);
   }
 }
+
 .container2 {
   text-align: center;
   font-size: 25px;
@@ -437,22 +458,22 @@ a {
 }
 
 .foo1:hover {
-  background-color: #585858;
+  background-color: rgb(88, 88, 88);
   padding: 0.5rem;
 }
 
 .foo2:hover {
-  background-color: #585858;
+  background-color: rgb(88, 88, 88);
   padding: 0.5rem;
 }
 
 .foo3:hover {
-  background-color: #585858;
+  background-color: rgb(88, 88, 88);
   padding: 0.5rem;
 }
 
 .Footer {
-  background-color: #aaa8a8;
+  background-color: rgb(170, 168, 168);
   background-image: radial-gradient(to bottom, white);
   grid-area: Footer;
   display: flex;
@@ -467,83 +488,93 @@ a {
     background-color: orangered;
   }
 }
+
 @media only screen and (min-width: 0px) and (max-width: 480px) {
   .bai img {
     max-width: 18px;
     max-height: 18px;
   }
 }
+
 @media only screen and (min-width: 481px) and (max-width: 575px) {
   body {
     background-color: blueviolet;
     color: orange;
   }
 }
+
 @media only screen and (min-width: 481px) and (max-width: 575px) {
   .bai img {
     max-width: 20px;
     max-height: 20px;
   }
 }
+
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   body {
-    color: black;
-    background-color: #3cff00;
+    color: rgb(0, 0, 0);
+    background-color: rgb(60, 255, 0);
   }
 }
+
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .bai img {
     max-width: 25px;
     max-height: 25px;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   body {
-    color: #0026ff;
-    background-color: #0077ff;
+    color: rgb(0, 38, 255);
+    background-color: rgb(0, 119, 255);
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .bai img {
     max-width: 30px;
     max-height: 30px;
   }
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   body {
-    color: #41ff80;
-    background-color: #ff00ea;
+    color: rgb(65, 255, 128);
+    background-color: rgb(255, 0, 234);
   }
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .bai img {
     max-width: 35px;
     max-height: 35px;
   }
 }
+
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   body {
-    color: red;
-    background-color: red;
+    color: rgb(255, 0, 0);
+    background-color: rgb(255, 0, 0);
   }
 }
+
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  .bai img {
-    max-width: 40px;
-    max-height: 40px;
-  }
-}
-@media only screen and (min-width: 1400px) {
-  body {
-    color: #ff00ea;
-    background-color: #fffb00;
-  }
-}
-@media only screen and (min-width: 1400px) {
   .bai img {
     max-width: 40px;
     max-height: 40px;
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+@media only screen and (min-width: 1400px) {
+  body {
+    color: rgb(255, 0, 234);
+    background-color: rgb(255, 251, 0);
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .bai img {
+    max-width: 40px;
+    max-height: 40px;
+  }
+}
