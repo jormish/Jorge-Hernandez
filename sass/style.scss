@@ -32,13 +32,6 @@ body {
   font-weight: bolder;
 }
 
-.navbar {
-  background-color: var(--color0) !important;
-
-  height: 0rem;
-  min-height: 6.5vh;
-}
-
 .dow {
   color: black;
   background-color: $color4;
@@ -62,20 +55,20 @@ h2 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 50px;
   font-weight: bolder;
+}
 
-  .dep2 {
-    height: 840px;
-    width: 100%;
-    background-color: var(--color2);
-    background-image: url(../imagenes/deportes-1.jpg);
-    background-size: cover;
-    background-position: center;
+.dep2 {
+  height: 840px;
+  width: 100%;
+  background-color: var(--color2);
+  background-image: url(../imagenes/deportes-1.jpg);
+  background-size: cover;
+  background-position: center;
 
-    display: flex;
-    justify-content: flex-start;
-    align-content: center;
-    border-radius: 50px;
-  }
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  border-radius: 50px;
 }
 
 .spo {

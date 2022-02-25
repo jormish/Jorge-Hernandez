@@ -24,12 +24,6 @@ body {
   font-weight: bolder;
 }
 
-.navbar {
-  background-color: var(--color0) !important;
-  height: 0rem;
-  min-height: 6.5vh;
-}
-
 .dow {
   color: black;
   background-color: white;
@@ -54,6 +48,7 @@ h2 {
   font-size: 50px;
   font-weight: bolder;
 }
+
 .dep2 {
   height: 840px;
   width: 100%;
@@ -69,8 +64,7 @@ h2 {
 
 .spo {
   color: #ffffff;
-  font-family: Georgia, "Times New Roman", Times, serif, Haettenschweiler,
-    "Arial Narrow Bold", sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   margin-top: 100px;
 }
 
