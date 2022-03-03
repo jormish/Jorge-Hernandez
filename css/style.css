@@ -11,8 +11,87 @@
   --color4: #ffffff;
 }
 
+.boxeo-icon,
+.basketball-icon,
+.football-icon,
+.futbol-icon,
+.x-games-icon {
+  border: 5px solid blue;
+}
+
+.boxeo-icon {
+  background-image: url("/imagenes/boxeo.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.basketball-icon {
+  background-image: url("/imagenes/basketball.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.football-icon {
+  background-image: url("/imagenes/football.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.futbol-icon {
+  background-image: url("/imagenes/futbol.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.x-games-icon {
+  background-image: url("/imagenes/x-games.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.boxeo-icon:hover {
+  height: 300px;
+  width: 250px;
+  margin: auto;
+}
+
+.basketball-icon:hover {
+  height: 300px;
+  width: 250px;
+  margin: auto;
+}
+
+.football-icon:hover {
+  height: 300px;
+  width: 250px;
+  margin: auto;
+}
+
+.futbol-icon:hover {
+  height: 300px;
+  width: 250px;
+  margin: auto;
+}
+
+.x-games-icon:hover {
+  height: 300px;
+  width: 250px;
+  margin: auto;
+}
+
+h2 {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+  text-shadow: #ffffff;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
 body {
-  background-color: grey;
+  background-color: #aaa8a8;
 }
 
 .navbar-toggler {
@@ -20,7 +99,7 @@ body {
 }
 
 .dropdown-item {
-  color: black;
+  color: green;
   font-weight: bolder;
 }
 
@@ -38,15 +117,6 @@ body {
   max-width: 100%;
   width: 100%;
   height: auto !important;
-}
-
-h2 {
-  text-align: center;
-  color: black;
-  text-shadow: #ffffff;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: 50px;
-  font-weight: bolder;
 }
 
 .dep2 {
@@ -183,7 +253,7 @@ a {
   height: 500px;
 }
 
-.Text-1 {
+.Text-1, .Text-5, .Text-4, .Text-3, .Text-2 {
   grid-area: Text-1;
   color: black;
   text-align: center;
@@ -193,7 +263,7 @@ a {
   padding: 5rem;
 }
 
-.Text-1 {
+.Text-1, .Text-5, .Text-4, .Text-3, .Text-2 {
   background-color: #65a349;
   animation-name: dep;
   animation-iteration-count: 10;
@@ -204,40 +274,10 @@ a {
 
 .Text-2 {
   grid-area: Text-2;
-  color: black;
-  text-align: center;
-  font-family: fantasy;
-  font-size: 50px;
-  text-shadow: 2px 2px 3px white;
-  padding: 5rem;
-}
-
-.Text-2 {
-  background-color: #65a349;
-  animation-name: dep;
-  animation-iteration-count: 10;
-  animation-timing-function: ease-in;
-  animation-duration: 7s;
-  animation-delay: 1s;
 }
 
 .Text-3 {
   grid-area: Text-3;
-  color: black;
-  text-align: center;
-  font-family: fantasy;
-  font-size: 50px;
-  text-shadow: 2px 2px 3px white;
-  padding: 5rem;
-}
-
-.Text-3 {
-  background-color: #65a349;
-  animation-name: dep;
-  animation-iteration-count: 10;
-  animation-timing-function: ease-in;
-  animation-duration: 7s;
-  animation-delay: 1s;
 }
 
 .Img-4 {
@@ -249,40 +289,10 @@ a {
 
 .Text-4 {
   grid-area: Text-4;
-  color: black;
-  text-align: center;
-  font-family: fantasy;
-  font-size: 50px;
-  text-shadow: 2px 2px 3px white;
-  padding: 5rem;
-}
-
-.Text-4 {
-  background-color: #65a349;
-  animation-name: dep;
-  animation-iteration-count: 10;
-  animation-timing-function: ease-in;
-  animation-duration: 7s;
-  animation-delay: 1s;
 }
 
 .Text-5 {
   grid-area: Text-5;
-  color: black;
-  text-align: center;
-  font-family: fantasy;
-  font-size: 50px;
-  text-shadow: 2px 2px 3px white;
-  padding: 5rem;
-}
-
-.Text-5 {
-  background-color: #65a349;
-  animation-name: dep;
-  animation-iteration-count: 10;
-  animation-timing-function: ease-in;
-  animation-duration: 7s;
-  animation-delay: 1s;
 }
 
 .vid1 {
@@ -517,8 +527,8 @@ a {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   body {
-    color: red;
-    background-color: red;
+    color: #ff0000;
+    background-color: #ff0000;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {

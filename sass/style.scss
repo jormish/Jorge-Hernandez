@@ -3,13 +3,11 @@
   padding: 0;
 }
 
-$color1: black;
+$color1: green;
 $color2: blue;
-$color3: grey;
+$color3: #aaa8a8;
 $color4: white;
 $color5: #585858;
-
-$font1: Segoe;
 
 :root {
   --color0: #aaa8a8;
@@ -17,6 +15,72 @@ $font1: Segoe;
   --color2: #001aff;
   --color3: #00bb54;
   --color4: #ffffff;
+}
+
+.boxeo-icon,
+.basketball-icon,
+.football-icon,
+.futbol-icon,
+.x-games-icon {
+  border: 5px solid $color2;
+}
+
+@each $sports in boxeo, basketball, football, futbol, x-games {
+  .#{$sports}-icon {
+    background-image: url("/imagenes/#{$sports}.jpg");
+
+    background-size: cover;
+    background-position: center;
+  }
+}
+.boxeo-icon:hover {
+  height: 300px;
+  width: 250px;
+
+  margin: auto;
+}
+
+.basketball-icon:hover {
+  height: 300px;
+  width: 250px;
+
+  margin: auto;
+}
+
+.football-icon:hover {
+  height: 300px;
+  width: 250px;
+
+  margin: auto;
+}
+
+.futbol-icon:hover {
+  height: 300px;
+  width: 250px;
+
+  margin: auto;
+}
+
+.x-games-icon:hover {
+  height: 300px;
+  width: 250px;
+
+  margin: auto;
+}
+
+@mixin center {
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  @include center;
+  text-align: center;
+  color: black;
+  text-shadow: #ffffff;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 50px;
+  font-weight: bolder;
 }
 
 body {
@@ -46,15 +110,6 @@ body {
   max-width: 100%;
   width: 100%;
   height: auto !important;
-}
-
-h2 {
-  text-align: center;
-  color: black;
-  text-shadow: #ffffff;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: 50px;
-  font-weight: bolder;
 }
 
 .dep2 {
@@ -222,41 +277,13 @@ a {
 }
 
 .Text-2 {
+  @extend .Text-1;
   grid-area: Text-2;
-  color: black;
-  text-align: center;
-  font-family: fantasy;
-  font-size: 50px;
-  text-shadow: 2px 2px 3px rgb(255, 255, 255);
-  padding: 5rem;
-}
-
-.Text-2 {
-  background-color: rgb(101, 163, 73);
-  animation-name: dep;
-  animation-iteration-count: 10;
-  animation-timing-function: ease-in;
-  animation-duration: 7s;
-  animation-delay: 1s;
 }
 
 .Text-3 {
+  @extend .Text-1;
   grid-area: Text-3;
-  color: black;
-  text-align: center;
-  font-family: fantasy;
-  font-size: 50px;
-  text-shadow: 2px 2px 3px rgb(255, 255, 255);
-  padding: 5rem;
-}
-
-.Text-3 {
-  background-color: rgb(101, 163, 73);
-  animation-name: dep;
-  animation-iteration-count: 10;
-  animation-timing-function: ease-in;
-  animation-duration: 7s;
-  animation-delay: 1s;
 }
 
 .Img-4 {
@@ -267,41 +294,13 @@ a {
 }
 
 .Text-4 {
+  @extend .Text-1;
   grid-area: Text-4;
-  color: black;
-  text-align: center;
-  font-family: fantasy;
-  font-size: 50px;
-  text-shadow: 2px 2px 3px rgb(255, 255, 255);
-  padding: 5rem;
-}
-
-.Text-4 {
-  background-color: rgb(101, 163, 73);
-  animation-name: dep;
-  animation-iteration-count: 10;
-  animation-timing-function: ease-in;
-  animation-duration: 7s;
-  animation-delay: 1s;
 }
 
 .Text-5 {
+  @extend .Text-1;
   grid-area: Text-5;
-  color: black;
-  text-align: center;
-  font-family: fantasy;
-  font-size: 50px;
-  text-shadow: 2px 2px 3px rgb(255, 255, 255);
-  padding: 5rem;
-}
-
-.Text-5 {
-  background-color: rgb(101, 163, 73);
-  animation-name: dep;
-  animation-iteration-count: 10;
-  animation-timing-function: ease-in;
-  animation-duration: 7s;
-  animation-delay: 1s;
 }
 
 .vid1 {
@@ -466,7 +465,7 @@ a {
 }
 
 .Footer {
-  background-color: rgb(170, 168, 168);
+  background-color: #aaa8a8;
   background-image: radial-gradient(to bottom, white);
   grid-area: Footer;
   display: flex;
@@ -533,7 +532,7 @@ a {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   body {
-    color: rgb(65, 255, 128);
+    color: #41ff80;
     background-color: rgb(255, 0, 234);
   }
 }
@@ -547,8 +546,8 @@ a {
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   body {
-    color: rgb(255, 0, 0);
-    background-color: rgb(255, 0, 0);
+    color: #ff0000;
+    background-color: #ff0000;
   }
 }
 
