@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -9,6 +10,280 @@
   --color2: #001aff;
   --color3: #00bb54;
   --color4: #ffffff;
+}
+
+.bani {
+  background-image: linear-gradient(45deg, black, black, black, #ccae04, black, black, black);
+  background-size: 410%;
+  animation: but1-ani 15s infinite alternate;
+}
+
+@keyframes but1-ani {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+.carousel {
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.inner {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  animation: carou 110s infinite;
+  opacity: 0;
+}
+
+.inner:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.inner:nth-child(2) {
+  animation-delay: 10s;
+}
+
+.inner:nth-child(3) {
+  animation-delay: 20s;
+}
+
+.inner:nth-child(4) {
+  animation-delay: 30s;
+}
+
+.inner:nth-child(5) {
+  animation-delay: 40s;
+}
+
+.inner:nth-child(6) {
+  animation-delay: 50s;
+}
+
+.inner:nth-child(7) {
+  animation-delay: 60s;
+}
+
+.inner:nth-child(8) {
+  animation-delay: 70s;
+}
+
+.inner:nth-child(9) {
+  animation-delay: 80s;
+}
+
+.inner:nth-child(10) {
+  animation-delay: 90s;
+}
+
+.inner:nth-child(11) {
+  animation-delay: 100s;
+}
+
+.inner:nth-child(12) {
+  animation-delay: 109s;
+}
+
+.inner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.pitg {
+  position: relative;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
+  font-weight: bolder;
+  background-image: linear-gradient(45deg, white, gold, #4343ff, gold, red);
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 325%;
+  animation: pit1-ani 10s infinite alternate;
+}
+
+@keyframes pit1-ani {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+.pit {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 10rem 5rem;
+  background-image: linear-gradient(45deg, white, gold, #4343ff, gold, red);
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 325%;
+  animation: pit1-ani 10s infinite alternate;
+}
+
+@keyframes pit1-ani {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+.pit h5 {
+  font-size: 3.5rem;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+  letter-spacing: 5px;
+  margin-bottom: 3rem;
+}
+
+.pit p {
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+  margin-bottom: 3rem;
+}
+
+@keyframes carou {
+  10% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0;
+  }
+}
+.pitba {
+  background: rgba(0, 0, 0, 0.452);
+}
+
+.ti1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  margin: auto;
+  padding: 0.5rem;
+  letter-spacing: 10px;
+  color: #000000;
+  background-image: linear-gradient(55deg, #000000, white, #000000);
+}
+
+.but1 {
+  border: 2px solid #ffd700;
+  border-radius: 25%;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  font-size: 2rem;
+  background-image: linear-gradient(45deg, #000000, white, #ffd700);
+  background-size: 200%;
+  background-position: left;
+  transition: background-position 0.4s;
+}
+
+.but1:hover,
+.but1:focus {
+  background-position: right;
+}
+
+.lee {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px solid #ffd700;
+  border-radius: 15%;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  font-size: 2rem;
+  background-image: linear-gradient(45deg, #000000, white, #ffd700);
+  background-size: 200%;
+  background-position: left;
+  transition: background-position 0.4s;
+}
+
+.lee:hover,
+.lee:focus {
+  color: #ad0000;
+  background-position: right;
+}
+
+.tiv {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 10px;
+  position: absolute;
+  margin: auto;
+  padding: 0.5rem;
+  width: 50%;
+  letter-spacing: 10px;
+  color: #000000;
+  background-image: linear-gradient(55deg, #000000, white, #000000);
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+section video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section .navigation {
+  display: flex;
+  width: fit-content;
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+}
+
+section .navigation li {
+  list-style: none;
+  cursor: pointer;
+  margin: 0 10px;
+  border-radius: 10px;
+  background: white;
+  padding: 3px;
+  opacity: 0.7;
+  transition: 0.4s;
+}
+
+section .navigation li img {
+  width: 200px;
+  transition: 0.5s;
+}
+
+section .navigation li:hover {
+  opacity: 1;
+}
+
+section .navigation li img:hover {
+  width: 400px;
+  transition: 0.5s;
 }
 
 .boxeo-icon,
@@ -88,10 +363,6 @@ h2 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 50px;
   font-weight: bolder;
-}
-
-body {
-  background-color: #aaa8a8;
 }
 
 .navbar-toggler {
@@ -219,80 +490,37 @@ a {
 }
 
 .container {
+  inline-size: min(44% - 4rem, 70rem);
+  margin-inline: auto;
+}
+
+.media-scroller {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 500px 300px 300px 300px 300px 300px 150px;
-  gap: 10px 10px;
-  grid-auto-flow: row;
-  grid-template-areas: "Hero Hero" "Text-1 Img-1" "Img-2 Text-2" "Text-3 Img-3" "Img-4 Text-4" "Text-5 Img-5" "Footer Footer";
-  width: 100%;
-  height: 100%;
+  grid-auto-flow: column;
+  grid-auto-columns: 55.6%;
+  gap: 1rem;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  padding-bottom: 10px;
 }
 
-.Hero,
-.Text-1,
-.Text-2,
-.Text-3,
-.Text-4,
-.Text-5,
-.Img-1,
-.Img-2,
-.Img-3,
-.Img-4,
-.Img-5,
-.footer {
-  box-sizing: border-box;
+.media-element {
+  background: #ffffff;
+  border-radius: 30px;
 }
 
-.Hero {
-  grid-area: Hero;
-  background-image: url(../imagenes/sports.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 500px;
+.media-element img {
+  inline-size: 100%;
+  aspect-ratio: 9/16;
+  object-fit: cover;
 }
 
-.Text-1, .Text-5, .Text-4, .Text-3, .Text-2 {
-  grid-area: Text-1;
-  color: black;
-  text-align: center;
-  font-family: fantasy;
-  font-size: 50px;
-  text-shadow: 2px 2px 3px white;
-  padding: 5rem;
+.snaps {
+  scroll-snap-type: inline mandatory;
 }
 
-.Text-1, .Text-5, .Text-4, .Text-3, .Text-2 {
-  background-color: #65a349;
-  animation-name: dep;
-  animation-iteration-count: 10;
-  animation-timing-function: ease-in;
-  animation-duration: 7s;
-  animation-delay: 1s;
-}
-
-.Text-2 {
-  grid-area: Text-2;
-}
-
-.Text-3 {
-  grid-area: Text-3;
-}
-
-.Img-4 {
-  grid-area: Img-4;
-  background-image: url(../imagenes/futbol.jpg);
-  background-position: top;
-  background-size: cover;
-}
-
-.Text-4 {
-  grid-area: Text-4;
-}
-
-.Text-5 {
-  grid-area: Text-5;
+.snaps > * {
+  scroll-snap-align: start;
 }
 
 .vid1 {
@@ -328,94 +556,6 @@ a {
   flex-wrap: wrap;
   width: 100%;
   height: 100%;
-}
-
-.Img-1 {
-  grid-area: Img-1;
-  background-image: url(../imagenes/boxeo.jpg);
-  background-position: top;
-  background-size: cover;
-}
-
-.Img-1 {
-  transition: height 0.7s;
-}
-
-.Img-1:hover {
-  height: 300px;
-  width: 250px;
-  margin: auto;
-}
-
-.Img-2 {
-  grid-area: Img-2;
-  background-image: url(../imagenes/basketball.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.Img-2 {
-  transition: height 0.7s;
-}
-
-.Img-2:hover {
-  height: 300px;
-  width: 250px;
-  margin: auto;
-}
-
-.Img-3 {
-  grid-area: Img-3;
-  background-image: url(../imagenes/football.jpg);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.Img-3 {
-  transition: height 0.7s;
-}
-
-.Img-3:hover {
-  height: 300px;
-  width: 250px;
-  margin: auto;
-}
-
-.Img-4 {
-  grid-area: Img-4;
-  background-image: url(../imagenes/futbol.jpg);
-  background-position: top;
-  background-size: cover;
-}
-
-.Img-4:hover {
-  transition: height 0.7s;
-}
-
-.Img-4:hover {
-  height: 300px;
-  width: 250px;
-  margin: auto;
-}
-
-.Img-5 {
-  grid-area: Img-5;
-  background-image: url(../imagenes/x-games.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.Img-5:hover {
-  transition: height 0.7s;
-}
-
-.Img-5:hover {
-  height: 300px;
-  width: 250px;
-  margin: auto;
 }
 
 .row1 {
@@ -465,10 +605,126 @@ a {
   align-items: center;
 }
 
+.contact-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 39vh;
+}
+
+.contact-info {
+  color: #fff;
+  max-width: 500px;
+  line-height: 65px;
+  padding-left: 50px;
+  font-size: 18px;
+}
+
+.contact-info i {
+  margin-right: 20px;
+  font-size: 35px;
+}
+
+.contact-form {
+  max-width: 700px;
+  margin-right: 50px;
+}
+
+.contact-info,
+.contact-form {
+  flex: 1;
+}
+
+.contact-form h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 35px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.contact-form .text-box {
+  background: white;
+  color: black;
+  border: none;
+  width: calc(50% - 10px);
+  height: 50px;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.contact-form .text-box:first-child {
+  margin-right: 15px;
+}
+
+.contact-form textarea {
+  background: white;
+  color: black;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  min-height: 200px;
+  max-height: 400px;
+  resize: vertical;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.contact-form .send-btn {
+  float: right;
+  background: #0091ff;
+  color: #fff;
+  border: none;
+  width: 120px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  transition-property: background;
+}
+
+.contact-form .send-btn:hover {
+  background: #0582e3;
+}
+
+@media screen and (max-width: 950px) {
+  .contact-section {
+    flex-direction: column;
+  }
+
+  .contact-info,
+.contact-form {
+    margin: 30px 50px;
+  }
+
+  .contact-form h2 {
+    font-size: 30px;
+  }
+
+  .contact-form .text-box {
+    width: 100%;
+  }
+}
 @media only screen and (min-width: 0px) and (max-width: 480px) {
   body {
     color: red;
     background-color: orangered;
+  }
+
+  .pitg {
+    font-size: 11px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 480px) {
@@ -482,6 +738,10 @@ a {
     background-color: blueviolet;
     color: orange;
   }
+
+  .pitg {
+    font-size: 10px;
+  }
 }
 @media only screen and (min-width: 481px) and (max-width: 575px) {
   .bai img {
@@ -493,6 +753,10 @@ a {
   body {
     color: black;
     background-color: #3cff00;
+  }
+
+  .pitg {
+    font-size: 13px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -506,6 +770,10 @@ a {
     color: #0026ff;
     background-color: #0077ff;
   }
+
+  .pitg {
+    font-size: 18px;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .bai img {
@@ -517,6 +785,10 @@ a {
   body {
     color: #41ff80;
     background-color: #ff00ea;
+  }
+
+  .pitg {
+    font-size: 23px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -530,6 +802,10 @@ a {
     color: #ff0000;
     background-color: #ff0000;
   }
+
+  .pitg {
+    font-size: 25px;
+  }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .bai img {
@@ -538,15 +814,13 @@ a {
   }
 }
 @media only screen and (min-width: 1400px) {
-  body {
-    color: #ff00ea;
-    background-color: #fffb00;
-  }
-}
-@media only screen and (min-width: 1400px) {
   .bai img {
     max-width: 40px;
     max-height: 40px;
+  }
+
+  .pitg {
+    font-size: 30px;
   }
 }
 
